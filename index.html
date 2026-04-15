@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afro Roots | Cuisines du Monde - Kara, Togo</title>
-    <meta name="description" content="Découvrez Afro Roots, restaurant incontournable à Kara (Togo). Un mélange exquis de cultures, des saveurs du monde, une ambiance unique.">
+    <title>Afro Roots</title>
+    <meta name="description"
+        content="Découvrez Afro Roots, restaurant incontournable à Kara (Togo). Un mélange exquis de cultures, des saveurs du monde, une ambiance unique.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar">
+
+        <!-- mettre un logo -->
         <div class="logo">Afro <span>Roots</span></div>
         <ul class="nav-links">
             <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">L'Esprit</a></li>
+            <li><a href="#about">Culture</a></li>
             <li><a href="#menu">Notre Carte</a></li>
             <li><a href="#events">Événements</a></li>
+            <li><a href="#services">Nos services</a></li>
         </ul>
-        <a href="#contact" class="btn-primary">Nous Contacter</a>
+        <a href="#contact" class="btn-primary">Commandez</a>
         <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -29,11 +37,14 @@
 
     <header id="home" class="hero section">
         <div class="hero-bg">
-            <img src="./assets/hero.png" alt="Intérieur du restaurant Afro Roots">
+            <!-- Vidéo de fond en boucle. Remplacez ./assets/interieur.mp4 par votre vidéo. L'affiche du hero (hero.png) s'affichera avant que la vidéo ne charge ou sur mobile -->
+            <video autoplay loop muted playsinline poster="./assets/hero.png" class="video-bg">
+                <source src="./assets/interieur.mp4" type="video/mp4">
+            </video>
             <div class="overlay"></div>
         </div>
         <div class="hero-content reveal">
-            <h1>L'Essence des<br><span class="highlight">Cuisines du Monde</span></h1>
+            <h1>Venez savourer la<br><span class="highlight">Cuisine Africaine</span></h1>
             <p>Un voyage culinaire entre le Burundi et le Togo au cœur de Kara.</p>
             <div class="hero-buttons">
                 <a href="#menu" class="btn-primary">Découvrir le Menu</a>
@@ -45,13 +56,16 @@
     <section id="about" class="about section container">
         <div class="about-grid">
             <div class="about-text reveal left">
-                <h2 class="section-title">L'Esprit <span>Afro Roots</span></h2>
-                <p>Né d'une passion commune de Mariam et Dambé, un couple burundo-togolais, Afro Roots est bien plus qu'un simple restaurant. C'est un véritable carrefour culturel situé au Rond-point Lama à Kara.</p>
-                <p>La décoration s'inspire des éléments traditionnels africains, offrant un cadre chaleureux et élégant, parfait pour s'évader le temps d'un repas.</p>
+                <h2 class="section-title">Notre<span> Culture</span></h2>
+                <p>Né d'une passion commune de Mariam et Dambé, un couple burundo-togolais, Afro Roots est bien plus
+                    qu'un simple restaurant. C'est un véritable coin de délice africaines situé au Togo dans la ville de
+                    Kara dans la von à droite après APRODAT sur la route du nouveau marché.</p>
+                <p>Deuxième paragraphe : Notre culture culinaire est basé sur la cuisine africaine authentique sans
+                    produits additifs ou chimique (Cube)</p>
                 <div class="badges">
-                    <span class="badge">Kids Friendly</span>
-                    <span class="badge">Motards Friendly</span>
-                    <span class="badge">Gay Friendly</span>
+                    <span class="badge">Accueil pour Tous</span>
+                    <span class="badge">Idéal en Famille</span>
+                    <span class="badge">Parking Moto</span>
                 </div>
             </div>
             <div class="about-image reveal right">
@@ -65,8 +79,13 @@
     <section id="menu" class="menu section dark-bg">
         <div class="container container-sm text-center reveal">
             <h2 class="section-title">Notre <span>Carte</span></h2>
-            <p class="section-subtitle">Découvrez des plats locaux revisités avec des produits du terroir, alliant tradition et modernité.</p>
+            <p class="section-subtitle">Découvrez des plats locaux revisités avec des produits du terroir, alliant
+                tradition et modernité.</p>
         </div>
+
+
+        <!-- A REVOIR Mettre 5photos de plats et les descriptions en dessous avec le prix et le bouton "Commander". -->
+
         <div class="container menu-grid">
             <div class="menu-item reveal up" style="transition-delay: 100ms;">
                 <div class="menu-img">
@@ -75,32 +94,130 @@
                 <div class="menu-info">
                     <h3>Le Doyi</h3>
                     <p>Délicates tripes accompagnées de haricots épicés, une recette mijotée pour réveiller les sens.</p>
+                    <div class="menu-action">
+                        <span class="price">3 500 F</span>
+                        <a href="#contact" class="btn-primary btn-sm">Commander</a>
+                    </div>
                 </div>
             </div>
             <div class="menu-item reveal up" style="transition-delay: 200ms;">
                 <div class="menu-img placeholder-img"></div>
                 <div class="menu-info">
                     <h3>Wassa Wassa</h3>
-                    <p>Couscous traditionnel à base de farine d'igname, servi avec des poissons frais locaux.</p>
+                    <p>Couscous traditionnel à base de farine d'igname, garni généreusement avec des poissons frais et sauce.</p>
+                    <div class="menu-action">
+                        <span class="price">4 000 F</span>
+                        <a href="#contact" class="btn-primary btn-sm">Commander</a>
+                    </div>
                 </div>
             </div>
             <div class="menu-item reveal up" style="transition-delay: 300ms;">
                 <div class="menu-img placeholder-img-2"></div>
                 <div class="menu-info">
+                    <h3>Poulet Bicyclette</h3>
+                    <p>Poulet local braisé, parfaitement assaisonné, servi avec frites d'ignames ou bananes plantains.</p>
+                    <div class="menu-action">
+                        <span class="price">6 500 F</span>
+                        <a href="#contact" class="btn-primary btn-sm">Commander</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item reveal up" style="transition-delay: 400ms;">
+                <div class="menu-img placeholder-img"></div>
+                <div class="menu-info">
+                    <h3>Pâte Dialé</h3>
+                    <p>Mélange onctueux de pâte locale accompagné par notre délicieuse sauce épinard et viande fumée.</p>
+                    <div class="menu-action">
+                        <span class="price">2 500 F</span>
+                        <a href="#contact" class="btn-primary btn-sm">Commander</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item reveal up" style="transition-delay: 500ms;">
+                <div class="menu-img placeholder-img-2"></div>
+                <div class="menu-info">
                     <h3>Sodabi & Glaces</h3>
-                    <p>Glace artisanale locale accompagnée d'un sodabi infusé avec passion, le final parfait.</p>
+                    <p>Glace artisanale locale accompagnée d'un sodabi infusé avec passion, le dessert parfait.</p>
+                    <div class="menu-action">
+                        <span class="price">2 000 F</span>
+                        <a href="#contact" class="btn-primary btn-sm">Commander</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="events" class="events section container">
-        <div class="events-container reveal">
-            <img src="./assets/live.png" alt="Concert Live" class="events-img">
-            <div class="events-content">
-                <h2 class="section-title">L'Ambiance <span>Live Concert</span></h2>
-                <p>Laissez-vous transporter par la musique ! Afro Roots, c'est aussi un live club vibrant. Tous les vendredis soirs dès 20h00, venez vibrer au rythme de nos orchestres locaux dans une ambiance intime et chaleureuse.</p>
-                <a href="#contact" class="btn-primary mt-4">Réserver une table</a>
+    <section id="events" class="events section dark-bg">
+        <div class="container text-center reveal">
+            <h2 class="section-title">Nos Événements <span>à venir</span></h2>
+            <p class="section-subtitle">Vibrez au rythme de la musique et des animations dans une ambiance chaleureuse.</p>
+        </div>
+        <div class="container events-grid">
+            <!-- Event 1 -->
+            <div class="event-card reveal up" style="transition-delay: 100ms;">
+                <div class="event-img">
+                    <img src="./assets/live.png" alt="Concert Live Acoustique">
+                    <div class="event-date">
+                        <span class="day">19</span>
+                        <span class="month">Avr</span>
+                    </div>
+                </div>
+                <div class="event-info">
+                    <h3>Concert Live Afro</h3>
+                    <p>Venez profiter d'une soirée vibrante avec orchestre local sur scène. Musique traditionnelle et moderne.</p>
+                    <a href="#contact" class="btn-primary mt-3">Réservez votre place</a>
+                </div>
+            </div>
+            <!-- Event 2 -->
+            <div class="event-card reveal up" style="transition-delay: 200ms;">
+                <div class="event-img placeholder-img">
+                    <div class="event-date">
+                        <span class="day">25</span>
+                        <span class="month">Avr</span>
+                    </div>
+                </div>
+                <div class="event-info">
+                    <h3>Dîner du Mois</h3>
+                    <p>Découvrez notre menu dégustation exclusif avec accords de boissons locales finement choisies.</p>
+                    <a href="#contact" class="btn-primary mt-3">Réservez votre place</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services section container">
+        <div class="text-center reveal">
+            <h2 class="section-title">Nos <span>Services</span></h2>
+            <p class="section-subtitle">Au-delà de notre salle à manger, nous donnons vie à toutes vos envies gourmandes et festives.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal up" style="transition-delay: 100ms;">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v7"></path><path d="M12 2v20"></path><path d="M12 12h10"></path><path d="m20 16 3 3-3 3"></path></svg>
+                </div>
+                <h3>Service Traiteur</h3>
+                <p>Des mets raffinés et de généreuses portions pour accompagner tous vos événements professionnels et privés à l'extérieur.</p>
+            </div>
+            <div class="service-card reveal up" style="transition-delay: 200ms;">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h5v5"></path><path d="M19.5 4 12 11.5"></path><circle cx="6.5" cy="17.5" r="3.5"></circle><circle cx="17.5" cy="17.5" r="3.5"></circle></svg>
+                </div>
+                <h3>Restauration Personnalisée</h3>
+                <p>Des menus complètement adaptés et sur-mesure répondant spécifiquement à vos envies particulières ou régimes.</p>
+            </div>
+            <div class="service-card reveal up" style="transition-delay: 300ms;">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg>
+                </div>
+                <h3>Fourniture de Sandwiches</h3>
+                <p>Distribution de sandwichs frais, garnis généreusement avec des produits de qualité pour des pauses repas rapides.</p>
+            </div>
+            <div class="service-card reveal up" style="transition-delay: 400ms;">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                </div>
+                <h3>Accueil d'Évènements</h3>
+                <p>Privatisation de l'espace pour vos Dîners de Gala, Anniversaires, Remises de Prix, Célébrations et Concerts Live.</p>
             </div>
         </div>
     </section>
@@ -113,14 +230,31 @@
             </div>
             <div class="footer-info">
                 <h3>Contact</h3>
-                <p>Rond-point Lama, Carrefour Lama<br>Kara, Togo</p>
-                <p class="phone">(+228) 97 22 74 18</p>
+                <ul class="contact-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span class="phone">(+228) 97 22 74 18</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>contact@afroroots.com</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Rond-point Lama, Carrefour Lama<br>Kara, Togo</span>
+                    </li>
+                </ul>
             </div>
             <div class="footer-hours">
                 <h3>Horaires</h3>
-                <p><span>Lun - Jeu :</span> 10h00 - 23h00</p>
-                <p><span>Ven - Sam :</span> 10h00 - 00h00</p>
-                <p><span>Dimanche :</span> 10h00 - 23h00</p>
+                <!-- Message provisoire -->
+                <p><em>Nos horaires sont en cours d'organisation pour mieux vous accueillir. <br>Veuillez nous contacter pour toute réservation.</em></p>
+            </div>
+            <div class="footer-map">
+                <h3>Localisation</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15750.933220551064!2d1.17178059524045!3d9.549444747443152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102cbab3ab948dc5%3A0x6bba843bbed70a9f!2sKara%2C%20Togo!5e0!3m2!1sfr!2s!4v1713028245842!5m2!1sfr!2s" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
@@ -130,4 +264,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

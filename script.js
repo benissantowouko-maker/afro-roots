@@ -44,3 +44,4 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 // Trigger once on load
 reveal();
+
